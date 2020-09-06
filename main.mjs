@@ -7,11 +7,12 @@ import express from 'express';
 const app = express();
 const port = process.env.PORT;
 
-//bring routers
+//Routes import
 import userRoutes from './routers/users.mjs';
 
 
-//Routes
+
+//Routes definitions
 app.use('/users', userRoutes);
 
 
